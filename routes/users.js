@@ -11,7 +11,7 @@ router.get("/new", (req, res) =>{
 router.post("/",(req,res)=>{
     res.send("create user")
 })
-router.route("/id")
+router.route("/:id")
 .get((req,res)=>{
     res.send(`GET USER WITH ID ${req.params.id}`)
 })
